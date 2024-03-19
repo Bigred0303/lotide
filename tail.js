@@ -17,3 +17,6 @@ console.log(tail(tester));
 console.log(tester);
 tail(tester);
 assertEqual(tester.length, 5);
+
+assertEqual(tail([1]).length, 0);
+assertEqual(tail([]).length, 0);

@@ -1,6 +1,6 @@
 const flatten = function(arr) {
   let flatArr = arr.reduce((accumulator, value) => accumulator.concat(value), []);
-  console.log(flatArr);
+  return flatArr;
 };
 
 const eqArrays = function(arr1, arr2) {
@@ -32,3 +32,5 @@ const assertArraysEqual = function(arr1, arr2) {
 };
 
 flatten([1, 2, [3, 4], 5, [6]]);
+
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);

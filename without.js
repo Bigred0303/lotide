@@ -1,9 +1,6 @@
-const isPresent = function(source) {
-    return !(source.includes)
-}
 const without = function(source, itemsToRemove) {
   let newArray = [];
-  for (const element of source){
+  for (const element of source) {
     newArray = source.filter(element => !itemsToRemove.includes(element));
   }
 

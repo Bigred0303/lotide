@@ -15,13 +15,14 @@ const eqArrays = function(arr1, arr2) {
   return stillTrue;
 };
 
-const assertArraysEqual = function(eqArrays) {
-  if (eqArrays === true) {
-    console.log(`✔✔✔  Assertion Passed: ${eqArrays} === ${true} The arrays are equal`);
+const assertArraysEqual = function(arr1, arr2) {
+  let arrayCheck = eqArrays(arr1, arr2);
+  if (arrayCheck === true) {
+    console.log(`✔✔✔  Assertion Passed: ${arr1} === ${arr2} The arrays are equal`);
   } else {
-    console.log(`🧨🧨🧨 Assertion Failed: ${eqArrays} !== ${true} The arrays aren't equal`);
+    console.log(`🧨🧨🧨 Assertion Failed: ${arr1} !== ${arr2} The arrays aren't equal`);
   }
 };
   
-console.log(assertArraysEqual(eqArrays([1,2,3], [1,2,3])));
-console.log(assertArraysEqual(eqArrays([1,4,3], [1,2,3])));
+console.log(assertArraysEqual([1,2,3], [1,2,3]));
+console.log(assertArraysEqual([1,4,3], [1,2,3]));

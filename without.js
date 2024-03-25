@@ -12,7 +12,7 @@ const eqArrays = function(arr1, arr2) {
   let stillTrue = true;
   let i = 0;
   if (arr1 === undefined || arr2 === undefined) {
-    return stilltrue = false;
+    return stillTrue = false;
   }
   if (arr1.length === arr2.length) {
     for (const element of arr1) {

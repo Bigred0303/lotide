@@ -10,7 +10,7 @@ const objectTest = {
 const findKey = (searchObject, callback) => {
 
   for (const item in searchObject) {
-    if (callback(objectTest[item])) {
+    if (callback(searchObject[item])) {
       return item;
     }
   }

@@ -15,7 +15,7 @@ describe("#head", () => {
     it("returns 'H' for 'Hello'", () => {
         assert.strictEqual(head("Hello"), 'H'); 
     });
-    it("returns ''hello'' for ['Hello', 'Lighthouse', 'Labs']", () => {
+    it("returns 'hello' for ['Hello', 'Lighthouse', 'Labs']", () => {
         assert.strictEqual(head(['Hello', 'Lighthouse', 'Labs']), 'Hello'); 
     });
   });

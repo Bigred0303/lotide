@@ -27,3 +27,5 @@ const assertEqual = function(actual, expected) {
 assertEqual(findKey(objectTest,(item) => item["stars"] === 2), "noma");
 assertEqual(findKey(objectTest,(item) => item["stars"] === 3), "Akaleri");
 assertEqual(findKey(objectTest,(item) => item["stars"] === 1), "Blue Hill");
+
+module.exports = findKey;

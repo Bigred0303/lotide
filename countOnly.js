@@ -12,7 +12,6 @@ const countOnly = (allItems, itemsToCount) =>  {
 
   );
   return results;
-  //console.log(results);
 };
 
 const assertEqual = function(actual, expected) {
